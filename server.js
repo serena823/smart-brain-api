@@ -9,7 +9,7 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-    client: 'pg',
+    client: 'postgresql-fitted-61207',
     connection: {
     host : '127.0.0.1',
     user : 'siqishao',
