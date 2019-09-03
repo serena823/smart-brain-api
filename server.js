@@ -9,12 +9,10 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-    client: 'postgresql-fitted-61207',
+    client: 'pg',
     connection: {
-    host : '127.0.0.1',
-    user : 'siqishao',
-    password : '',
-    database : 'smart-brain'
+    connectionString : process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
